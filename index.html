@@ -17,6 +17,7 @@
         box-sizing: border-box;
         font-family: "CeraPro", sans-serif;
       }
+
       body {
         background: #f3f3f3;
         display: flex;
@@ -25,6 +26,7 @@
         height: 100vh;
         margin: 0;
       }
+
       .modal {
         background: #fff;
         width: 500px;
@@ -32,6 +34,7 @@
         padding: 52px 100px 60px 100px;
         position: relative;
       }
+
       .close {
         position: absolute;
         top: 3px;
@@ -41,9 +44,11 @@
         color: #46a358;
         cursor: pointer;
       }
+
       .close:hover {
         color: #333;
       }
+
       .modal::after {
         content: "";
         position: absolute;
@@ -53,23 +58,27 @@
         height: 6px;
         background: #4caf50;
       }
+
       .header {
         text-align: center;
         margin-bottom: 40px;
         font-size: 20px;
         line-height: 16px;
       }
+
       .header .active {
         color: #4caf50;
         font-weight: bold;
         font-style: normal;
       }
+
       p {
         font-size: 13px;
         color: #3d3d3d;
         margin-bottom: 14px;
         text-align: left;
       }
+
       input {
         width: 100%;
         padding: 12px 14px;
@@ -79,6 +88,7 @@
         border: 1px solid #ddd;
         font-size: 14px;
       }
+
       button {
         font-family: "CeraPro", sans-serif;
         font-size: 16px;
@@ -91,17 +101,20 @@
         border-radius: 8px;
         cursor: pointer;
       }
+
       .divider {
         text-align: center;
         margin-bottom: 27px;
         font-size: 13px;
       }
+
       .social-btn {
         border: 1px solid #ddd;
         background: #fff;
         margin-bottom: 15px;
         color: #727272;
       }
+
       .social-btn:hover {
         background: #f5f5f5;
       }
@@ -110,12 +123,15 @@
   <body>
     <div class="modal">
       <div class="close">&times;</div>
+
       <div class="header">
         <span class="login" style="color: #3d3d3d">Login</span>
         <span>|</span>
         <span class="active">Register</span>
       </div>
+
       <p>Enter your email and password to register.</p>
+
       <input type="text" placeholder="Username" />
       <input type="email" placeholder="Enter your email address" />
       <input type="password" placeholder="Password" />
@@ -124,8 +140,11 @@
         placeholder="Confirm Password"
         style="margin-bottom: 41px"
       />
+
       <button style="margin-bottom: 36px">Register</button>
+
       <div class="divider" style="color: #3d3d3d">Or register with</div>
+
       <button class="social-btn">Continue with Google</button>
       <button class="social-btn">Continue with Facebook</button>
     </div>
