@@ -47,6 +47,10 @@ body {
   margin: 0;
 }
 
+.login {
+  color: #3d3d3d;
+}
+
 .modal {
   background: #fff;
   width: 500px;
@@ -123,9 +127,17 @@ button {
 }
 
 .divider {
+  color: #3d3d3d;
   text-align: center;
   margin-bottom: 27px;
   font-size: 13px;
+}
+.register-btn {
+  margin-bottom: 36px;
+}
+
+.confirm-btn {
+  margin-bottom: 41px;
 }
 
 .social-btn {
