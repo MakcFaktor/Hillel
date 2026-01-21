@@ -1,152 +1,150 @@
 @font-face {
-  font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
+  font-family: "Cera pro Regular";
+  src: url("../fonts/CeraPro-Regular.eot");
+  src:
+    local("Cera Pro Regular"),
+    local("CeraPro-Regular"),
+    url("../fonts/CeraPro-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff"),
+    url("../fonts/CeraPro-Regular.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Cera pro Medium";
+  src: url("../fonts/CeraPro-Medium.eot");
+  src:
+    local("Cera Pro Medium"),
+    local("CeraPro-Medium"),
+    url("../fonts/CeraPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CeraPro-Medium.woff2") format("woff2"),
+    url("../fonts/CeraPro-Medium.woff") format("woff"),
+    url("../fonts/CeraPro-Medium.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Cera pro Bold";
+  src: url("../fonts/CeraPro-Bold.eot");
+  src:
+    local("Cera Pro Bold"),
+    local("CeraPro-Bold"),
+    url("../fonts/CeraPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.woff") format("woff"),
+    url("../fonts/CeraPro-Bold.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Cera pro Black";
+  src: url("../fonts/CeraPro-Black.eot");
+  src:
+    local("Cera Pro Bold"),
+    local("CeraPro-Bold"),
+    url("../fonts/CeraPro-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CeraPro-Black.woff2") format("woff2"),
+    url("../fonts/CeraPro-Black.woff") format("woff"),
+    url("../fonts/CeraPro-Black.ttf") format("truetype");
 }
-
-@font-face {
-  font-family: "CeraPro";
-  src: url("../fonts/CeraPro-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-}
-
 * {
-  box-sizing: border-box;
-  font-family: "CeraPro", sans-serif;
-}
-
-body {
-  background: #f3f3f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
-}
-
-.login {
-  color: #3d3d3d;
-}
-
-.modal {
-  background: #fff;
-  width: 500px;
-  height: 656px;
-  padding: 52px 100px 60px 100px;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 3px;
-  right: 13px;
-  padding: 3px;
-  font-size: 22px;
-  color: #46a358;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #333;
-}
-
-.modal::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: #4caf50;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 20px;
-  line-height: 16px;
-}
-
-.header .active {
-  color: #4caf50;
-  font-weight: bold;
-  font-style: normal;
-}
-
-p {
-  font-size: 13px;
-  color: #3d3d3d;
-  margin-bottom: 14px;
-  text-align: left;
-}
-
-input {
-  width: 100%;
-  padding: 12px 14px;
-
-  margin-bottom: 16px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 14px;
-}
-
-button {
-  font-family: "CeraPro", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  width: 100%;
-  padding: 12px;
-  background: #4caf50;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
 }
-
-.divider {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+header.header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #eaeaea;
+}
+menu.menu {
+  display: flex;
+  gap: 50px;
+}
+li.menu-item {
   color: #3d3d3d;
-  text-align: center;
-  margin-bottom: 27px;
-  font-size: 13px;
+  font-family: "Cera Pro Regular";
+  font-size: 16px;
+  padding: 8px 0 25px;
+  border-bottom: 3px solid transparent;
 }
-.register-btn {
-  margin-bottom: 36px;
+li.menu-item.active {
+  font-family: "Cera Pro Bold";
+  border-color: #46a358;
 }
-
-.confirm-btn {
-  margin-bottom: 41px;
+button.header-btn {
+  padding: 8px 17px;
+  border-radius: 6px;
+  background: #46a358;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-family: "Cera Pro Medium";
 }
-
-.social-btn {
-  border: 1px solid #ddd;
-  background: #fff;
-  margin-bottom: 15px;
+.main-container {
+  width: 575px;
+  margin-top: 68px;
+  margin-left: 43px;
+}
+.main-subtitle {
+  color: #3d3d3d;
+  font-family: "Cera Pro Medium";
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+h1 {
+  color: #3d3d3d;
+  font-family: "Cera pro Black";
+  font-size: 70px;
+  line-height: 70px; /* 100% */
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.green {
+  color: #46a358;
+}
+.main-text {
   color: #727272;
+  font-family: "Cera Pro Regular";
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 44px;
 }
-
-.social-btn:hover {
-  background: #f5f5f5;
+.main-btn {
+  color: #fff;
+  font-family: "Cera Pro Bold";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #46a358;
+  padding: 11px 26px;
+  margin-bottom: 85px;
+}
+.main {
+  display: flex;
+}
+.main-img {
+  position: relative;
+  width: 507px;
+}
+.main-img-item {
+  position: absolute;
+}
+.big {
+  left: 76px;
+}
+.small {
+  top: 300px;
+  right: 244px;
 }
