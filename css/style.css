@@ -136,7 +136,7 @@ h1 {
 }
 .main-img {
   position: relative;
-  width: 507px;
+  width: 582px;
 }
 .main-img-item {
   position: absolute;
@@ -146,5 +146,5 @@ h1 {
 }
 .small {
   top: 300px;
-  right: 244px;
+  right: 310px;
 }
