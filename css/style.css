@@ -143,10 +143,8 @@ h1.main-title {
   position: relative;
   /* width: 582px; */
 }
-.main-img-item {
-  
-}
-img.big{
+
+img.big {
   max-width: none;
 }
 .big {
