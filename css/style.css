@@ -51,11 +51,9 @@
   border: none;
 }
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 30px;
   display: flex;
   flex-direction: column;
+  padding: 30px 120px 52px;
 }
 header.header {
   margin-bottom: 12px;
@@ -90,9 +88,9 @@ button.header-btn {
   font-family: "Cera Pro Medium";
 }
 .main-container {
-  width: 575px;
-  margin-top: 68px;
-  margin-left: 43px;
+  /* margin-top: 68px;
+  margin-left: 43px; */
+  padding: 68px 43px 85px;
 }
 .main-subtitle {
   color: #3d3d3d;
@@ -102,13 +100,14 @@ button.header-btn {
   text-transform: uppercase;
   margin-bottom: 7px;
 }
-h1 {
+h1.main-title {
   color: #3d3d3d;
   font-family: "Cera pro Black";
   font-size: 70px;
-  line-height: 70px; /* 100% */
+  line-height: 70px;
   text-transform: uppercase;
   margin-bottom: 5px;
+  width: 70%;
 }
 .green {
   color: #46a358;
@@ -119,6 +118,7 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 44px;
+  width: 60%;
 }
 .main-btn {
   color: #fff;
@@ -129,22 +129,34 @@ h1 {
   border-radius: 6px;
   background: #46a358;
   padding: 11px 26px;
-  margin-bottom: 85px;
+  /* margin-bottom: 85px; */
 }
 .main {
   display: flex;
+  background: linear-gradient(
+    98deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
 }
 .main-img {
   position: relative;
-  width: 582px;
+  /* width: 582px; */
 }
 .main-img-item {
-  position: absolute;
+  
+}
+img.big{
+  max-width: none;
 }
 .big {
-  left: 76px;
+  /* left: 76px; */
+  width: 507px;
 }
 .small {
-  top: 300px;
-  right: 310px;
+  /* top: 300px; */
+  /* right: 310px; */
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
 }
