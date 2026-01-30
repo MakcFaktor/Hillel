@@ -77,21 +77,25 @@
   font-family: "Cera Pro Bold";
   font-size: 18px;
   line-height: 16px;
-  padding-bottom: 7px;
+  padding: 14px 18px 7px 18px;
+  /* padding-bottom: 7px;
   margin-top: 14px;
-  margin-left: 18px;
+  margin-left: 18px; */
 }
-
+.categories {
+  background: #fbfbfb;
+  padding-left: 30px;
+}
 .categories li {
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 15px;
   line-height: 40px;
-  margin-left: 30px;
+
   cursor: pointer;
 }
 .categories li:last-child {
-  margin-bottom: 337px;
+  padding-bottom: 337px;
 }
 
 .categories li.active {
@@ -106,7 +110,7 @@
 .products-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 56px;
+  padding-bottom: 56px;
 }
 
 .tabs a {
@@ -141,6 +145,7 @@
   margin-bottom: 90px;
 }
 .card {
+  background: #fbfbfb;
   width: 258px;
 }
 h4 {
