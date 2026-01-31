@@ -64,147 +64,122 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   padding: 30px 120px 52px;
 }
-
-.shop {
-  display: flex;
-  column-gap: 50px;
-}
-
-.sidebar h3 {
-  color: #3d3d3d;
-  font-family: "Cera Pro Bold";
-  font-size: 18px;
-  line-height: 16px;
-  padding: 14px 18px 7px 18px;
-  /* padding-bottom: 7px;
-  margin-top: 14px;
-  margin-left: 18px; */
-}
-.categories {
-  background: #fbfbfb;
-  padding-left: 30px;
-}
-.categories li {
-  color: #3d3d3d;
-  font-family: "Cera Pro Regular";
-  font-size: 15px;
-  line-height: 40px;
-
-  cursor: pointer;
-}
-.categories li:last-child {
-  padding-bottom: 337px;
-}
-
-.categories li.active {
-  color: #46a358;
-  font-weight: bold;
-}
-
-.sale h2 {
-  color: #46a358;
-  font-size: 24px;
-}
-.products-header {
+header.header {
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 56px;
+  align-items: start;
+  border-bottom: 1px solid #eaeaea;
+}
+menu.menu {
+  display: flex;
+  gap: 50px;
+}
+li.menu-item {
+  color: #3d3d3d;
+  text-align: right;
+  font-family: "Cera Pro Black";
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding-bottom: 9px;
+  width: 50%;
 }
 
-.tabs a {
+.promo-content p {
+  color: #727272;
+  text-align: right;
+  font-family: "Cera Pro Regular";
+  font-size: 16px;
+  padding: 8px 0 25px;
   border-bottom: 3px solid transparent;
-  margin-right: 40px;
-  color: #3d3d3d;
-  font-family: "Cera Pro Regular";
-  font-size: 15px;
-  line-height: 16px;
-  padding-bottom: 7px;
 }
-
-.tabs a.active {
-  color: #46a358;
+li.menu-item.active {
   font-family: "Cera Pro Bold";
-  border-bottom: 3px solid #46a358;
+  border-color: #46a358;
 }
-
-.sort {
-  color: #3d3d3d;
-  font-family: "Cera Pro Regular";
-  font-size: 15px;
-  line-height: 16px;
-}
-.list-card {
-  width: 840px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 70px 33px;
-  margin-bottom: 90px;
-}
-.card {
-  background: #fbfbfb;
-  width: 258px;
-}
-h4 {
-  color: #3d3d3d;
-  font-family: "Cera Pro Regular";
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-.card img {
-  margin-bottom: 15px;
-}
-.list-card .card span {
-  color: #46a358;
-  font-family: "Cera Pro Bold";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-}
-
-.card span {
-  color: #46a358;
-  font-weight: bold;
-}
-
-/* Page */
-
-.pagination {
-  display: flex;
-  gap: 10px;
-  justify-content: flex-end;
-}
-.pagination li {
-  color: #3d3d3d;
-  font-family: "Cera Pro Light";
-  font-size: 18px;
-  line-height: 16px;
-}
-.page {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #e5e5e5;
+button.header-btn {
+  padding: 8px 17px;
   border-radius: 6px;
+  background: #46a358;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  cursor: pointer;
-  color: #3d3d3d;
+  gap: 4px;
+  color: #fff;
+  font-family: "Cera Pro Medium";
 }
-
-.page:hover {
-  border-color: #46a358;
+.main-container {
+  /* margin-top: 68px;
+  margin-left: 43px; */
+  padding: 68px 43px 85px;
+}
+.main-subtitle {
+  color: #3d3d3d;
+  font-family: "Cera Pro Medium";
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+h1.main-title {
+  color: #3d3d3d;
+  font-family: "Cera pro Black";
+  font-size: 70px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  width: 70%;
+}
+.green {
   color: #46a358;
 }
-
-.page.active {
-  background: #46a358;
+.main-text {
+  color: #727272;
+  font-family: "Cera Pro Regular";
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 44px;
+  width: 60%;
+}
+.main-btn {
   color: #fff;
-  border-color: #46a358;
   font-family: "Cera Pro Bold";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  background: #46a358;
+  padding: 11px 26px;
+  /* margin-bottom: 85px; */
+}
+.main {
+  display: flex;
+  background: linear-gradient(
+    98deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
+}
+.main-img {
+  position: relative;
+  /* width: 582px; */
+}
+
+img.big {
+  max-width: none;
+}
+.big {
+  /* left: 76px; */
+  width: 507px;
+}
+.small {
+  /* top: 300px; */
+  /* right: 310px; */
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
 }
