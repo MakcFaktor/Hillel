@@ -72,6 +72,9 @@
   column-gap: 50px;
 }
 
+.sidebar {
+  background: #fbfbfb;
+}
 .sidebar h3 {
   color: #3d3d3d;
   font-family: "Cera Pro Bold";
@@ -83,19 +86,15 @@
   margin-left: 18px; */
 }
 .categories {
-  background: #fbfbfb;
-  padding-left: 30px;
+  padding: 0 30px;
+  margin-bottom: 337px;
 }
 .categories li {
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 15px;
   line-height: 40px;
-
   cursor: pointer;
-}
-.categories li:last-child {
-  padding-bottom: 337px;
 }
 
 .categories li.active {
@@ -110,12 +109,16 @@
 .products-header {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 56px;
+  margin-bottom: 56px;
+}
+
+.tabs {
+  display: flex;
+  gap: 40px;
 }
 
 .tabs a {
   border-bottom: 3px solid transparent;
-  margin-right: 40px;
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 15px;
@@ -130,13 +133,23 @@
 }
 
 .sort {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 15px;
   line-height: 16px;
 }
+.sort-btn {
+  background: white;
+}
+.sale-banner {
+  width: 310px;
+  max-width: none;
+}
 .list-card {
-  width: 840px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -146,7 +159,6 @@
 }
 .card {
   background: #fbfbfb;
-  width: 258px;
 }
 h4 {
   color: #3d3d3d;
