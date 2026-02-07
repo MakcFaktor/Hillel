@@ -67,6 +67,8 @@
   padding: 30px 120px 52px;
 }
 
+/* Aside */
+
 .shop {
   display: flex;
   column-gap: 50px;
@@ -75,20 +77,20 @@
 .sidebar {
   background: #fbfbfb;
 }
+
 .sidebar h3 {
   color: #3d3d3d;
   font-family: "Cera Pro Bold";
   font-size: 18px;
   line-height: 16px;
   padding: 14px 18px 7px 18px;
-  /* padding-bottom: 7px;
-  margin-top: 14px;
-  margin-left: 18px; */
 }
+
 .categories {
   padding: 0 30px;
   margin-bottom: 337px;
 }
+
 .categories li {
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
@@ -106,6 +108,7 @@
   color: #46a358;
   font-size: 24px;
 }
+
 .products-header {
   display: flex;
   justify-content: space-between;
@@ -142,13 +145,17 @@
   font-size: 15px;
   line-height: 16px;
 }
+
 .sort-btn {
   background: white;
 }
+
 .sale-banner {
   width: 310px;
   max-width: none;
 }
+
+/* Card */
 .list-card {
   display: flex;
   flex-wrap: wrap;
@@ -157,8 +164,47 @@
   gap: 70px 33px;
   margin-bottom: 90px;
 }
+
 .card {
+  border-top: 3px solid transparent;
+}
+
+.card:hover {
+  border-top: 3px solid #46a358;
+}
+
+.card-img .badge {
+  font-family: "Cera Pro Medium";
+  font-size: 16px;
+  line-height: 16px;
+  position: absolute;
+  top: 15px;
+  background: #46a358;
+  color: #fff;
+  padding: 7px 9px;
+}
+
+.card-img {
+  position: relative;
   background: #fbfbfb;
+  transition: 0.3s;
+}
+
+.card-svg {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.card:hover .card-svg {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 h4 {
@@ -167,11 +213,21 @@ h4 {
   line-height: 16px;
   margin-bottom: 6px;
 }
+
 .card img {
   margin-bottom: 15px;
 }
-.list-card .card span {
-  color: #46a358;
+
+/* Price */
+
+.price-box {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.price {
+  /* color: #46a358; */
   font-family: "Cera Pro Bold";
   font-size: 18px;
   font-style: normal;
@@ -179,9 +235,17 @@ h4 {
   line-height: 16px;
 }
 
+.price-box .old-price {
+  color: #a5a5a5;
+  font-family: "Cera Pro Regular";
+  font-size: 18px;
+  line-height: 16px;
+  text-decoration: line-through;
+}
+
 .card span {
   color: #46a358;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 /* Page */
