@@ -80,6 +80,8 @@
   width: 400px;
 }
 
+/* Aside */
+
 .promo-content {
   display: flex;
   flex-direction: column;
@@ -91,44 +93,55 @@
   align-items: center;
 }
 
+.sidebar {
+  background: #fbfbfb;
+}
+
 .promo-content h3 {
   color: #3d3d3d;
   text-align: right;
   font-family: "Cera Pro Black";
   font-size: 18px;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding-bottom: 9px;
-  width: 50%;
+  line-height: 16px;
+  padding: 14px 18px 7px 18px;
+  /* padding-bottom: 7px;
+  margin-top: 14px;
+  margin-left: 18px; */
 }
-
-.promo-content p {
-  color: #727272;
-  text-align: right;
+.categories {
+  background: #fbfbfb;
+  padding-left: 30px;
+}
+.categories li {
+  color: #3d3d3d;
   font-family: "Cera Pro Regular";
-  font-size: 14px;
-  line-height: 24px;
-  padding-bottom: 25px;
-  width: 80%;
+  font-size: 15px;
+  line-height: 40px;
+
+  cursor: pointer;
+}
+.categories li:last-child {
+  padding-bottom: 337px;
 }
 
-.btn {
+.categories li.active {
+  color: #46a358;
+  font-weight: bold;
+}
+
+.sale h2 {
+  color: #46a358;
+  font-size: 24px;
+}
+.products-header {
   display: flex;
-  border-radius: 6px;
-  background: #46a358;
-  color: #fff;
-  font-family: "Cera Pro Medium";
-  font-size: 14px;
-  line-height: 20px;
-  align-items: center;
-  padding: 11px 28px;
+  justify-content: space-between;
+  padding-bottom: 56px;
 }
 
-/* BLOG */
-.blog {
-  margin-bottom: 80px;
-}
-.blog h2 {
+.tabs a {
+  border-bottom: 3px solid transparent;
+  margin-right: 40px;
   color: #3d3d3d;
   text-align: center;
   font-family: "Cera Pro Bold";
@@ -137,43 +150,55 @@
   padding-bottom: 15px;
 }
 
-.blog-subtitle {
-  color: #727272;
-  text-align: center;
+.sort {
+  color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 14px;
   line-height: 24px;
   padding-bottom: 35px;
 }
-
-.blog-list {
+.list-card {
+  width: 840px;
   display: flex;
-  gap: 43px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 70px 33px;
+  margin-bottom: 90px;
 }
-
-/* .blog-card {
-} */
-
-.blog-card img {
-  width: 368px;
-  height: 195px;
-  margin-bottom: 9px;
+.card {
+  background: #fbfbfb;
+  width: 258px;
 }
-
-.blog-card .date {
+h4 {
+  color: #3d3d3d;
+  font-family: "Cera Pro Regular";
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+.card img {
+  margin-bottom: 15px;
+}
+.list-card .card span {
   color: #46a358;
-  font-family: "Cera Pro Medium";
-  font-size: 14px;
+  font-family: "Cera Pro Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 16px;
 }
 
-.blog-card h4 {
-  width: 80%;
-  color: #3d3d3d;
-  font-family: "Cera Pro Bold";
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 4px;
+.price-box .old-price {
+  color: #a5a5a5;
+  font-family: "Cera Pro Regular";
+  font-size: 18px;
+  line-height: 16px;
+  text-decoration: line-through;
+}
+
+.card span {
+  color: #46a358;
+  font-weight: bold;
 }
 
 .blog-card p {
