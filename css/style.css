@@ -57,10 +57,11 @@
 }
 
 /* PROMO */
+
 .promo {
   display: flex;
   gap: 28px;
-  padding-bottom: 138px;
+  margin-bottom: 138px;
 }
 .promo-card img {
   width: 400px;
@@ -70,10 +71,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-right: 30px;
 }
 .promo-card {
   display: flex;
-  background: #ffffff;
+  background: #fbfbfb;
   align-items: center;
 }
 
@@ -84,8 +86,7 @@
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-bottom: 9px;
-  width: 50%;
+  margin-bottom: 9px;
 }
 
 .promo-content p {
@@ -94,8 +95,7 @@
   font-family: "Cera Pro Regular";
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 25px;
-  width: 80%;
+  margin-bottom: 25px;
 }
 
 .btn {
@@ -119,8 +119,8 @@
   text-align: center;
   font-family: "Cera Pro Bold";
   font-size: 30px;
-  line-height: 16px;
-  padding-bottom: 15px;
+  /* line-height: 16px; */
+  margin-bottom: 15px;
 }
 
 .blog-subtitle {
@@ -129,7 +129,7 @@
   font-family: "Cera Pro Regular";
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .blog-list {
@@ -137,12 +137,13 @@
   gap: 43px;
 }
 
-/* .blog-card {
-} */
+.blog-card {
+  background: #fbfbfb;
+}
 
 .blog-card img {
-  width: 368px;
-  height: 195px;
+  max-width: none;
+  width: 268px;
   margin-bottom: 9px;
 }
 
@@ -180,6 +181,7 @@
 .blog-card a.active {
   color: #46a358;
 }
-.pad {
-  margin-left: 15px;
+.blog-text {
+  padding-bottom: 13px;
+  padding-left: 15px;
 }
