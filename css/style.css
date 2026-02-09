@@ -71,10 +71,6 @@ header.header {
 }
 
 .menu-item {
-  position: relative;
-}
-
-.menu-item {
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 16px;
@@ -87,21 +83,22 @@ header.header {
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 16px;
-  padding: 8px 0 25px;
   position: absolute;
   top: calc(100% + 17px);
   min-width: 150px;
   display: none;
   background: #edf6ee;
-  padding: 10px;
+  padding: 14px 20px;
 }
 .submenu li:not(:last-child) {
   margin-bottom: 14px;
 }
 
-.menu-item:hover .submenu {
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
   display: block;
 }
+
 .submenu-item {
   position: relative;
 }
