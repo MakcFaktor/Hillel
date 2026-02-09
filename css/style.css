@@ -106,6 +106,7 @@ header.header {
     opacity 0.25s ease,
     transform 0.25s ease,
     visibility 0.25s;
+  z-index: 2;
 }
 .submenu li:not(:last-child) {
   margin-bottom: 14px;
