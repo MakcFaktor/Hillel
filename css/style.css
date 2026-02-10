@@ -199,14 +199,22 @@
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   opacity: 0;
-  pointer-events: none;
   transition: 0.3s;
 }
 .card-btn {
-  background-color: transparent;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #3d3d3d;
+  transition: color 0.3s;
+}
+
+.card-btn:hover {
+  color: #46a358;
 }
 
 .card:hover .card-svg {
+  color: #46a358;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
