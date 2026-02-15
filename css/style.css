@@ -63,209 +63,181 @@
   flex-direction: column;
   padding: 30px 120px 52px;
 }
-header.header {
-  margin-bottom: 12px;
+
+/* FEATURES */
+.features {
+  background: #fbfbfb;
+  padding: 50px 25px;
+}
+
+.features-wrap {
   display: flex;
-  justify-content: space-between;
-  align-items: start;
-  border-bottom: 1px solid #eaeaea;
-}
-.menu {
-  display: flex;
-  gap: 50px;
-}
-.menu a {
-  color: #333;
+  gap: 30px;
+  align-items: flex-start;
 }
 
-.menu-item {
+.feature {
+  flex: 1;
+  /* border-left: 1px solid rgba(70, 163, 88, 0.1); */
+}
+
+.feature h3 {
   color: #3d3d3d;
-  font-family: "Cera Pro Regular";
-  font-size: 16px;
-  padding: 8px 0 25px;
-  border-bottom: 3px solid transparent;
-  position: relative;
-}
-
-.menu-item {
-  position: relative;
-}
-
-.submenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 188px;
-  background: #edf6ee;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-
-  transform: translateY(10px);
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
-  z-index: 10;
-}
-
-.menu-item:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.submenu li a {
-  font-family: "Encode Sans Expanded Regular";
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 22px;
-  font-size: 16px;
-  color: #3d3d3d;
-}
-
-.submenu li a:hover,
-.arrow:hover {
-  font-family: "Encode Sans Expanded Bold";
-  background: #1f7a2e;
-  color: #fff;
-}
-
-.submenu-item {
-  position: relative;
-}
-
-.submenu-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -12px;
-  width: 12px;
-  height: 100%;
-}
-
-.submenu-right {
-  position: absolute;
-  top: -92px;
-  left: 100%;
-  width: 200px;
-  background: #edf6ee;
-  margin-left: 2px;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.25s ease;
-}
-
-.submenu-item:hover > .submenu-right {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.submenu-right a {
-  display: block;
-  padding: 10px 22px;
-  font-size: 14px;
-  color: #3d3d3d;
-}
-
-.submenu-right a:hover {
-  background: #1f7a2e;
-  color: #fff;
-}
-.submenu-link {
-  gap: 10px;
-}
-
-.submenu-item:hover .arrow svg {
-  transform: translateX(3px);
-  transition: transform 0.2s ease;
-}
-
-.menu-item:hover {
   font-family: "Cera Pro Bold";
-  border-color: #46a358;
+  font-size: 17px;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 9px;
 }
-button.header-btn {
-  padding: 8px 17px;
-  border-radius: 6px;
-  background: #46a358;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  color: #fff;
-  font-family: "Cera Pro Medium";
-}
-.main-container {
-  /* margin-top: 68px;
-  margin-left: 43px; */
-  padding: 68px 43px 85px;
-}
-.main-subtitle {
-  color: #3d3d3d;
-  font-family: "Cera Pro Medium";
-  font-size: 14px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 7px;
-}
-h1.main-title {
-  color: #3d3d3d;
-  font-family: "Cera pro Black";
-  font-size: 70px;
-  line-height: 70px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  width: 70%;
-}
-.green {
-  color: #46a358;
-}
-.main-text {
+.feature p {
   color: #727272;
   font-family: "Cera Pro Regular";
   font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 44px;
-  width: 60%;
+  line-height: 22px;
+  text-align: left;
 }
-.main-btn {
-  color: #fff;
-  font-family: "Cera Pro Bold";
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  background: #46a358;
-  padding: 11px 26px;
-  /* margin-bottom: 85px; */
-}
-.main {
-  display: flex;
-  background: linear-gradient(
-    98deg,
-    rgba(245, 245, 245, 0.5) -23.46%,
-    rgba(245, 245, 245, 0.5) 107.51%
-  );
-}
-.main-img {
-  position: relative;
-  /* width: 582px; */
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 17px;
+
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
 }
 
-img.big {
-  max-width: none;
+/* іконки через background */
+.icon-care {
+  background-image: url("../img/Picture.png");
 }
-.big {
-  /* left: 76px; */
-  width: 507px;
+
+.icon-renovation {
+  background-image: url("../img/Picture\ \(1\).png");
 }
-.small {
-  /* top: 300px; */
-  /* right: 310px; */
-  position: absolute;
-  bottom: 20px;
-  left: 40px;
+
+.icon-watering {
+  background-image: url("../img/Picture\ \(2\).png");
+}
+
+/* NEWSLETTER */
+.newsletter {
+  flex: 1.5;
+}
+.newsletter p {
+  color: #727272;
+  font-family: "Cera Pro Regular";
+  font-size: 13px;
+  line-height: 22px;
+}
+.newsletter h3 {
+  color: #3d3d3d;
+  font-family: "Cera Pro Bold";
+  font-size: 18px;
+  line-height: 16px;
+}
+.newsletter-form {
+  display: flex;
+  margin: 15px 0;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #acacac;
+  font-family: "Cera Pro Regular";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.newsletter-form button {
+  padding: 10px 25px;
+  background: #46a358;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Cera Pro Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* FOOTER */
+.footer-top {
+  background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+  padding: 20px;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-info p {
+  color: #3d3d3d;
+  font-family: "Cera Pro Regular";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-contact,
+.footer-phone,
+.footer-adresa {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-bottom {
+  background: #fbfbfb;
+  display: flex;
+  gap: 40px;
+  padding: 40px 25px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h4 {
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  color: #3d3d3d;
+  font-family: "Cera Pro Regular";
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.footer-copy {
+  color: #3d3d3d;
+  font-family: "Cera Pro Regular";
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+}
+
+.footer-col {
+  color: #3d3d3d;
+  font-family: "Cera Pro Bold";
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 33px;
 }
