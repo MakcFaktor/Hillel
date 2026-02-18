@@ -433,20 +433,31 @@ img.big {
   background: #fbfbfb;
 }
 
-.sidebar h3 {
-  color: #3d3d3d;
-  font-family: "Cera Pro Bold";
+.sidebar-title {
   font-size: 18px;
+  font-weight: 600;
+  color: #3d3d3d;
+  margin-bottom: 15px;
+  font-family: "Cera Pro Bold";
   line-height: 16px;
   padding: 14px 18px 7px 18px;
 }
 
-.categories {
-  padding: 0 30px;
-  margin-bottom: 337px;
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.categories li {
+.sidebar-list {
+  padding: 0 30px;
+  /* margin-bottom: 337px; */
+}
+.sidebar-list:last-child {
+  margin-bottom: 19px;
+}
+
+.sidebar-list li {
   color: #3d3d3d;
   font-family: "Cera Pro Regular";
   font-size: 15px;
@@ -454,11 +465,94 @@ img.big {
   cursor: pointer;
 }
 
-.categories li:hover {
-  color: #46a358;
-  font-weight: bold;
+.sidebar-list a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 15px;
+  transition: 0.25s;
+  border-radius: 6px;
+  padding: 4px 6px;
 }
 
+.sidebar-list a:hover {
+  font-weight: bold;
+  color: #46a358;
+}
+
+/* Price Range */
+.price-range {
+  padding: 0 30px;
+  margin-bottom: 46px;
+}
+
+.range {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: #d9d9d9;
+  border-radius: 4px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+/* зелена смуга */
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #46a358;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 4px rgba(70, 163, 88, 0.2);
+}
+
+.range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #46a358;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.price-text {
+  color: #3d3d3d;
+  font-family: "Cera Pro Regular";
+  font-size: 15px;
+  line-height: 16px;
+  font-size: 15px;
+  color: #3d3d3d;
+  margin-bottom: 12px;
+}
+
+.price-text span {
+  color: #46a358;
+  font-family: "Cera Pro Bold";
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.filter-btn {
+  color: #fff;
+  font-family: "Cera Pro Bold";
+  font-size: 16px;
+  line-height: 20px;
+  background: #46a358;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.filter-btn:hover {
+  background: #3d8f46;
+}
+
+/* Price Range */
 .sale h2 {
   color: #46a358;
   font-size: 24px;
@@ -503,6 +597,7 @@ img.big {
 
 .sort-btn {
   background: white;
+  padding: 0px;
 }
 
 .sale-banner {
@@ -806,7 +901,6 @@ h4 {
 
 .feature {
   flex: 1;
-  /* border-left: 1px solid rgba(70, 163, 88, 0.1); */
 }
 
 .feature h3 {
@@ -834,7 +928,6 @@ h4 {
   background-size: contain;
 }
 
-/* іконки через background */
 .icon-care {
   background-image: url("../img/Picture.png");
 }
@@ -1076,3 +1169,53 @@ h4 {
 }
 
 /* modal */
+
+/* loader */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.page-loader.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.loader {
+  display: flex;
+  gap: 10px;
+}
+
+.loader span {
+  width: 12px;
+  height: 12px;
+  background: #46a358;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}
